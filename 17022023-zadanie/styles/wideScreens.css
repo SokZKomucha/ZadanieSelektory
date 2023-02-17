@@ -1,0 +1,107 @@
+body {
+    font-size: 16px;
+    text-align: center;
+    overflow-x: hidden;
+    width: 100%;
+    background: #0A0A0A;
+    color: white
+}
+
+
+
+/* Header */
+
+header {
+    box-sizing: border-box;
+    height: 150px;
+    overflow: hidden;
+    background: #1B1B1B;
+}
+
+header nav {
+    position: relative;
+    top: 20px;
+}
+
+header nav div {
+    display: inline-block;
+    padding: 10px 20px;
+    border: solid 4px white;
+    border-radius: 10px;
+    width: 150px;
+    transition: box-shadow 0.15s ease-in-out;
+    cursor: pointer;
+}
+
+header nav div:hover {box-shadow: 0 0 10px white;}
+header h1 {padding-top: 20px;}
+
+
+
+/* Main */
+
+main section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 35vw;
+}
+
+
+
+/* ID */
+
+#backButton {
+    width: 50px;
+    height: 50px;
+    background-color: #1B1B1B;
+    border: solid 4px white;
+    border-radius: 10px;
+    transition: box-shadow 0.15s ease-in-out;
+    cursor: pointer;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 1vw;
+    bottom: 1vw;
+}
+
+#github {
+    width: 50px;
+    height: 50px;
+    background-color: #1B1B1B;
+    border: solid 4px white;
+    border-radius: 10px;
+    transition: box-shadow 0.15s ease-in-out;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 1vw;
+    bottom: 1vw;
+}
+
+
+
+/* Klasy */
+
+.space {
+    aspect-ratio: 1920 / 360;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer {background-image: url("../images/layerWide.svg");}
+.rotate {transform: rotate(180deg);}
+.glowWhite:hover {box-shadow: 0 0 15px white;}
+.red {background: #E54B3C;}
+

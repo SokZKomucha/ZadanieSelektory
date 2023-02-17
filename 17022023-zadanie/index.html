@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="EN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Selektory </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Georama:ital@0;1&display=swap" rel="stylesheet">
+    <link id="theme" href="styles/wideScreens.css" rel="stylesheet">
+    <link href="styles/default.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <header id="top">
+        <h1> Selektory w CSS3 </h1>
+        <nav>
+            <div id="listElement1"> Selektory klas </div>
+            <div id="listElement2"> Selektor ID </div>
+            <div id="listElement3"> Selektory elementu </div>
+            <div id="listElement4"> Selektory pseudoklas </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2> Co to selektory? </h2>
+            <p> Selektory w CSS to elementy, które służą do określania, które elementy HTML na stronie mają być stylizowane przy użyciu arkusza stylów CSS. </p>
+        </section>
+
+        <div class="space layer"></div>
+        <section class="red">
+            <h2> Do czego służą? </h2>
+            <p> Selektory pozwalają na odwoływanie się do elementów HTML na podstawie ich atrybutów, klas, identyfikatorów, relacji z innymi elementami i wielu innych właściwości, co pozwala na precyzyjne określanie, które elementy na stronie mają mieć określone style i formatowanie </p>
+        </section>
+        <div class="space layer rotate"></div>
+
+        <section>
+            <h2> Selektory </h2>
+            <p> [Imie Nazwisko] 1P, 2023 </p>
+            <div class="glowWhite" id="backButton" title="Powrót do góry"> <img src="images/upArrow.png" alt="" height="30" width="30"> </div>
+            <div class="glowWhite" id="github" title="Mój profil na GitHubie"> <img src="images/github.png" alt="" height="35" width="35"> </div>
+        </section>
+    </main>
+
+    <script src="scripts/windowWidth.js"></script>
+    <script src="scripts/indexListeners.js"></script>
+</body>
+</html>
+
+
+
+<!-- Notatki -->
+
+<!--
+    #E54B3C
+    #ED5749
+    #FE6E60
+    #BC6562
+    #0A0A0A
+-->
+
+<!--
+    .class              ta jedna klasa
+    .class1.class2      element ma obie klasy
+    .class1 .class2     element ma przynajmniej jedną z dwóch klas
+
+    #id                 element z id
+
+    element                 elementu
+    element1, element2      wybiera oba elementy
+    element1 element2       wybiera wszystkie element2 w element1 (niekoniecznie dzieci)
+    element1 > element2     wybiea wszystkie dzieci element2 elementu1 
+
+    pseudoklasy             te takie :after, :hover itp
+    ::after                 na W3 jest
+    ::before                =||=
+
+-->
