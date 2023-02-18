@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="PL">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pseudoklasy </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Georama:ital@0;1&display=swap" rel="stylesheet">
+    
+    <link id="theme" href="../styles/wideScreens.css" rel="stylesheet">
+    <link href="../styles/default.css" rel="stylesheet">
+
+</head>
+<body>
+    
+    <header id="top">
+        <h1> Selektory pseudoklas </h1>
+        <nav>
+            <div id="listElement1"> Strona główna </div>
+            <div id="listElement2"> Selektory klas </div>
+            <div id="listElement3"> Selektor ID </div>
+            <div id="listElement4"> Selektory elementów </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2> Selektor <code>:pseudoclass</code> </h2>
+            <p> Selektor <code>:pseudoclass</code> w CSS umożliwia zastosowanie stylów dla elementów HTML w określonych sytuacjach. Pseudoklasy to specjalne selektory, które określają stan lub zachowanie elementu </p>
+            <p> Przykładem pseudoklasy jest <code>:hover</code>, która sprawia, że po najechaniu kursorem na element coś się z nim dzieje. Można jej użyć pisząc <code>element:hover</code> w arkuszu stylów </p>
+            <p> Warto wspomnieć, że zamiast <code>element</code> można także użyć klas, bądź ID. Wtedy konstrukcja będzie będzie wyglądała jak <code>.class1:hover</code> </p>
+        </section>
+
+        <div class="space layer"></div>
+        <section class="red">
+            <h2> Selektory <code>::before</code> i <code>::after</code> </h2>
+            <p> Selektory <code>::before</code> i <code>::after</code> umożliwiają dodanie treści lub dekoracji przed lub po zawartości wybranego elementu. Choć wyglądają podobnie, nie są to pseudoklasy, tylko tzw. pseudoelementy. </p>
+        </section>
+        <div class="space layer rotate"></div>
+
+        <section>
+            <h2> Przykład użycia <code>::before</code> i <code>::after</code> </h2>
+            <p> Przykładowo, można użyć pseudoelementu <code>::before</code> do dodania treści przed zawartością elementu <code>&lt;p&gt;</code> w ten sposób: </p>
+            <p> <code>p::before {content: "Początek tekstu";}</code> </p>
+            <p> Taką konstrukcję można bardziej stylizować, na przykład poprzez dodanie innego koloru, bądź zmianę rozmiaru czcionki. </p>
+            <div class="glowWhite" id="backButton" title="Powrót do góry"> <img src="../images/upArrow.png" alt="" height="30" width="30"> </div>
+            <div class="glowWhite" id="github" title="Mój profil na GitHubie"> <img src="../images/github.png" alt="" height="35" width="35"> </div>
+        </section>
+    </main>
+
+    <script src="../scripts/sites/subsiteWindowWidth.js"></script>
+    <script src="../scripts/sites/pseudoclassesListeners.js"></script>
+</body>
+</html>

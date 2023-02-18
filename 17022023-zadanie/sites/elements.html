@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="PL">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Elementy </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Georama:ital@0;1&display=swap" rel="stylesheet">
+    
+    <link id="theme" href="../styles/wideScreens.css" rel="stylesheet">
+    <link href="../styles/default.css" rel="stylesheet">
+
+</head>
+<body>
+    
+    <header id="top">
+        <h1> Selektory Elementu </h1>
+        <nav>
+            <div id="listElement1"> Strona główna </div>
+            <div id="listElement2"> Selektory klas </div>
+            <div id="listElement3"> Selektor ID </div>
+            <div id="listElement4"> Selektory pseudoklas </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2> Selektor <code>element</code> </h2>
+            <p> Selektor <code>element</code> odnosi się do wszystkich elementów HTML określonego typu </p>
+            <p> Przykładowo, selektor <code>code</code> odnosi się do wszystkich elementów <code>&lt;code&gt;</code> na stronie </p>
+            <p> Jest to szczególnie przydatne, gdy mamy element taki jak <code>&lt;code&gt;</code>, któremu chcemy wszędzie nadać ten sam styl </p>
+        </section>
+
+        <div class="space layer"></div>
+        <section class="red">
+            <h2> Selektor <code>element1, element2</code> </h2>
+            <p> Selektor <code>element1, element2</code> działa podobnie jak wcześniej wspomniany selektor <code>element</code>. Zamiast wybierać każdy element do zmiany osobno, można użyć tego selektora. </p>
+            <p> Chcąc zaznaczyć jednocześnie <code>&lt;h1&gt;</code> oraz <code>&lt;h2&gt;</code> możemy użyć selektora <code>h1, h2</code> zamiast używania dwóch selektorów <code>element</code> </p>
+        </section>
+        <div class="space layer rotate"></div>
+
+        <section>
+            <h2> Selektor <code>element1 element2</code> </h2>
+            <p> Selektor <code>element1 element2</code> odnosi się do elementów HTML <code>element2</code>, które są zagnieżdżone w elemencie <code>element1</code> </p>
+            <p> Taki selektor przydaje się, gdy chcemy zastosować styl do elementów <code>element2</code> znajdujących się tylko w elementach <code>element1</code> i nigdzie indziej </p>
+        </section>
+
+        <section>
+            <h2> Selektor <code>element1 > element2</code> </h2>
+            <p> Selektor <code>element1 > element2</code> działa bardzo podobnie jak poprzedni, z tym że <code>element2</code> musi być bezpośrednio dzieckiem elementu <code>element1</code> </p>
+            <p> Warto dodać, że takiego samego selektora możemy także używać z klasami, bądź ID. Dzięki temu można tworzyć konstrukcje takie jak <code>.class1 > element1</code> </p>
+            <div class="glowWhite" id="backButton" title="Powrót do góry"> <img src="../images/upArrow.png" alt="" height="30" width="30"> </div>
+            <div class="glowWhite" id="github" title="Mój profil na GitHubie"> <img src="../images/github.png" alt="" height="35" width="35"> </div>
+        </section>
+    </main>
+
+    <script src="../scripts/sites/subsiteWindowWidth.js"></script>
+    <script src="../scripts/sites/elementsListeners.js"></script>
+</body>
+</html>

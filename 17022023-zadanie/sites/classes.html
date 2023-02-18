@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="PL">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Klasy </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Georama:ital@0;1&display=swap" rel="stylesheet">
+    
+    <link id="theme" href="../styles/wideScreens.css" rel="stylesheet">
+    <link href="../styles/default.css" rel="stylesheet">
+
+</head>
+<body>
+    
+    <header id="top">
+        <h1> Selektory klas </h1>
+        <nav>
+            <div id="listElement1"> Strona główna </div>
+            <div id="listElement2"> Selektor ID </div>
+            <div id="listElement3"> Selektory elementu </div>
+            <div id="listElement4"> Selektory pseudoklas </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2> Co to klasy? </h2>
+            <p> Klasy w HTML/CSS to mechanizm, który umożliwia nadanie elementom strony nazwy identyfikującej określony styl lub zachowanie. W przeciwieństwie do ID, kilka elementów może mieć tą samą klasę. </p>
+        </section>
+
+        <div class="space layer"></div>
+        <section class="red">
+            <h2> Selektor <code>.class</code> </h2>
+            <p> Selektor <code>.class</code> to selektor klasowy w CSS, który odnosi się do elementów HTML posiadających daną klasę. Przydatny, gdy mamy kilka elementów i chcemy im nadać takie same właściwości. W takim wypadku wystarczy nadać każdemu z nich tą samą klasę. </p>
+        </section>
+        <div class="space layer rotate"></div>
+
+        <section>
+            <h2> Selektor <code>.class1.class2</code></h2>
+            <p> Selektor <code>.class1.class2</code> nadaje elementom podane właściwości tylko wtedy, gdy element ma jednocześnie ustawione klasy <code>.class1</code> oraz <code>.class2</code> </p>
+            <p> Taki selektor może być przydatny, gdy chcemy zastosować styl do elementów posiadających obie klasy, a nie do elementów mających jedną z nich, bądź zagnieżdżonych w elemencie z tą klasą </p>
+        </section>
+
+        <section>
+            <h2> Selektor <code>.class1 .class2</code></h2>
+            <p> Selektor <code>.class1 .class2</code> odnosi się do elementów HTML, które posiadają <code>.class2</code> i są zagnieżdżone w elemencie, który posiada klasę <code>.class1</code> </p>
+            <p> Taki selektor jest przydatny w sytuacjach, gdy chcemy zastosować styl do elementów, które są umieszczone w określonej strukrutze HTML </p>
+            <div class="glowWhite" id="backButton" title="Powrót do góry"> <img src="../images/upArrow.png" alt="" height="30" width="30"> </div>
+            <div class="glowWhite" id="github" title="Mój profil na GitHubie"> <img src="../images/github.png" alt="" height="35" width="35"> </div>
+        </section>
+    </main>
+
+    <script src="../scripts/sites/subsiteWindowWidth.js"></script>
+    <script src="../scripts/sites/classesListeners.js"></script>
+</body>
+</html>
